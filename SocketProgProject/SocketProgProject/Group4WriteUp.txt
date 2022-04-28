@@ -1,0 +1,3 @@
+Project Idea, tools used, implemetation details, contribution of ech member by percentage, references
+For our project we decided to make a game center where a client can play two player games like tic tac toe and rock 
+paper sissors with another client or againest a computer player. 
