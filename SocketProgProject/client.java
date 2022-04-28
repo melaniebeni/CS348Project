@@ -1,10 +1,8 @@
 
-// A Java program for a Client
 import java.net.*;
 import java.io.*;
 
 public class client {
-	// initialize socket and input output streams
 	private Socket socket = null;
 	private DataInputStream input = null;
 	private DataOutputStream out = null;
@@ -27,6 +25,9 @@ public class client {
 			System.out.println(i);
 		}
 
+	}
+
+	public void close() {
 		// string to read message from input
 		String line = "";
 
@@ -39,7 +40,6 @@ public class client {
 				System.out.println(i);
 			}
 		}
-
 		// close the connection
 		try {
 			input.close();
@@ -52,5 +52,7 @@ public class client {
 
 	public static void main(String args[]) {
 		client C = new client("127.0.0.1", 5000);
+		new GameOptions();
+		C.close();
 	}
 }

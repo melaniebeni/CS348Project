@@ -48,6 +48,6 @@ public class server {
     }
 
     public static void main(String args[]) {
-        server s = new server(5000);
+        server s = new server(80);
     }
 }
